@@ -133,7 +133,7 @@ function child_theme_do_author_post_meta_share() {
 
 				printf( '<div class="%s">', 'meta-title' );
 
-					echo __( 'Author', 'hybopress' );
+					echo __( 'Author', 'neat' );
 
 				echo '</div>';
 
@@ -141,7 +141,7 @@ function child_theme_do_author_post_meta_share() {
 
 					printf( '<span class="%s">', 'fn' );
 
-						printf( '<a class="%1$s" rel="%2$s" href="%3$s" title="%4$s">', 'author-posts-url text-capitalize', 'author', trailingslashit( get_author_posts_url( get_the_author_meta( 'ID' ) ) ), __( 'Posts by', 'hybopress' ) . '&nbsp;' . get_the_author() );
+						printf( '<a class="%1$s" rel="%2$s" href="%3$s" title="%4$s">', 'author-posts-url text-capitalize', 'author', trailingslashit( get_author_posts_url( get_the_author_meta( 'ID' ) ) ), __( 'Posts by', 'neat' ) . '&nbsp;' . get_the_author() );
 
 							echo get_the_author();
 
@@ -159,11 +159,11 @@ function child_theme_do_author_post_meta_share() {
 
 				$category_title = sprintf( '<div class="%s">', 'meta-title' );
 
-				$category_title .= __( 'Category', 'hybopress' );
+				$category_title .= __( 'Category', 'neat' );
 
 				$category_title .= '</div>';
 
-				hybrid_post_terms( array( 'taxonomy' => 'category', 'text' => $category_title . ' %s', 'sep' => _x( '<br />', 'taxonomy terms separator', 'hybopress' ) ) );
+				hybrid_post_terms( array( 'taxonomy' => 'category', 'text' => $category_title . ' %s', 'sep' => _x( '<br />', 'taxonomy terms separator', 'neat' ) ) );
 
 			echo '</li>';
 		}
@@ -173,11 +173,11 @@ function child_theme_do_author_post_meta_share() {
 
 				$tag_title = sprintf( '<div class="%s">', 'meta-title' );
 
-				$tag_title .= __( 'Tags', 'hybopress' );
+				$tag_title .= __( 'Tags', 'neat' );
 
 				$tag_title .= '</div>';
 
-				hybrid_post_terms( array( 'taxonomy' => 'post_tag', 'text' => $tag_title . ' %s','sep' => _x( '<br />', 'taxonomy terms separator', 'hybopress' ) ) );
+				hybrid_post_terms( array( 'taxonomy' => 'post_tag', 'text' => $tag_title . ' %s','sep' => _x( '<br />', 'taxonomy terms separator', 'neat' ) ) );
 
 			echo '</li>';
 		}
@@ -188,7 +188,7 @@ function child_theme_do_author_post_meta_share() {
 
 				printf( '<div class="%s">', 'meta-title' );
 
-					echo __( 'Share', 'hybopress' );
+					echo __( 'Share', 'neat' );
 
 				echo '</div>';
 
