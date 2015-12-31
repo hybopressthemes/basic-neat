@@ -65,10 +65,9 @@ body {
 	font-family: 'Merriweather', 'Georgia', sans-serif;
 }
 
-
 .header-navbar .navbar-header {
 	margin-bottom: 14px;
-	margin-top: 22px;
+	margin-top: 18px;
 }
 
 .navbar-header .navbar-logo-title .site-title {
@@ -380,6 +379,15 @@ img.centered,
   border: none;
 }
 
+span.edit-this {
+	display: inline-block;
+}
+
+span.edit-this .comment-edit-link {
+	margin-left: 6px;
+	margin-right: 6px;
+}
+
 .comment-notes, .logged-in-as {
   width: 100% !important;
   font-size: 16px;
@@ -460,6 +468,11 @@ img.centered,
 	padding: 0;
 }
 
+.header-navbar .social-block {
+    margin-bottom: 16px;
+    margin-top: 16px;
+}
+
 .social-share {
 	border: none;
 	margin: 0;
@@ -468,8 +481,12 @@ img.centered,
 
 .child-theme .social-share a {
   text-align: left;
+  margin: 0;
 }
 
+.child-theme .social-share a:hover {
+  text-decoration: underline;
+}
 
 .search-meta .loop-description {
 	font-size: 18px;

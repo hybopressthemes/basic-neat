@@ -1,2 +1,2 @@
-# basic-neat
-Child Theme for Hybopress Basic
+# Basic Neat
+Child Theme for Hybopress Basic.

@@ -25,11 +25,6 @@ function child_theme_conditional_setup() {
 }
 
 function child_theme_setup_before_parent() {
-
-	if ( ! defined( 'SCRIPT_DEBUG' ) ) {
-		define( 'SCRIPT_DEBUG', false );
-	}
-
 }
 
 function child_theme_setup1() {
@@ -45,7 +40,7 @@ function child_theme_setup1() {
 function child_theme_register_styles() {
 	wp_register_style( 'child-fonts', '//fonts.googleapis.com/css?family=Arimo:400,700|Lato:300' );
 
-	$main_styles = trailingslashit( CHILD_THEME_URI ) . "assets/css/child-style.css";
+	$main_styles = trailingslashit( HYBRID_CHILD_URI ) . "assets/css/child-style.css";
 
 	wp_register_style(
 		sanitize_key(  'child-style' ), esc_url( $main_styles ), array( 'skin' ), PARENT_THEME_VERSION, esc_attr( 'all' )
